@@ -6,9 +6,6 @@
 <svelte:head>
     <title>SvelteKit Template</title>
 
-    <meta
-        name="description"
-        content="An opinionated SvelteKit template complete with Tailwind, PlayWright, Vitest, and Husky pre-installed" />
 </svelte:head>
 
 <div class="container">
