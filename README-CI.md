@@ -30,6 +30,8 @@ After docker is installed, go inside the `website/` folder. This folder contains
 
 _DISCLAIMER: I did use a docker template for node js, but I made sure I understood what it is doing, which isn't really that complicated._
 
+The Dockerfile is located inside of the `website/` folder to make it easier, since the website has to go through a build process
+
 To build the docker container, simply run this command:
 ```bash
 docker build -t webcontainer .
