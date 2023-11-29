@@ -29,7 +29,7 @@
 
     <Clock />
 
-    <p>Made by Joshua Quaintance!</p>
+    <p>&copy; 2023 | Made by Joshua Quaintance!</p>
 </div>
 
 <style lang="postcss">
