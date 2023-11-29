@@ -75,3 +75,45 @@ To check if the web server actually work, there are multiple ways of doing this.
     And this should return a massive html that contains the website.
 
 2. The better way, test in a browser. Simply open your browser and go to `localhost:80` on the address bar. It should show the website in its glory.
+
+
+### Part 2. - Github Actions & Dockerhub
+
+#### 1. Create a public repo in dockerhub
+To use dockerhub you first need an account. You can create one here: https://hub.docker.com/signup
+
+Creating an accaount is simple, just choose a username, put your email down and password, or if you're lazy like me, just use one of the 3 different OAuth options, for me I used GitHub, since dockerhub is coding, and I like to categorize my account using my GitHub.
+
+After that is done, sign in to your account and click on the repository tab, then create repository. Give it a name and description and simply press create.
+
+#### 1. Authenticating Dockerhub in CLI
+
+Before we log in to the terminal, we need to get an authentication token from docker. We don't want to use our actual account password when we log into our terminal. 
+To do this:
+1. Go to Account Settings (Top Right)
+2. Click on Security
+3. On `Access Token` Tab, click on `New Access Token`
+4. Give it a simple description and `Access Permission` necessary (I used `Read, Write`)
+5. Press Generate
+6. Copy the token that it gave (THE ONLY TIME YOU CAN GET IT)
+
+To login to dockerhub on your terminal, simply run this command:
+
+```bash
+docker login -u joshquaintance
+```
+
+Change `joshquaintance` to your dockerhub username. It will then prompt for your password. DON'T TYPE YOUR PASSWORD, instead paste the token you got when you created it.
+
+#### 2. Push container to dockerhub
+
+To push the container to dockerhub, you have to make sure to be signed in. Then run this command:
+```
+docker push yourusername/repository-name:tag
+```
+
+If your container was named differently then the `username/repo-name`, we can re tag the container so we can push it. do:
+```
+docker tag local-container-name yourusername/repository-name:tag
+```
+This will give that container a tag that can be recognized, then you can push that container.
