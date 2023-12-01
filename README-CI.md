@@ -2,6 +2,8 @@
 
 This project shows how continuous integration works, which is the standard in today's development world. The idea is that after an update to the code base and building the project, the container will automatically be able to run the code at any environment without the developer having to change any container configurations, thus the continuous nature.
 
+![Diagram](Diagram.png)
+
 ##### Tools Used:
 
 - Docker - Container software
