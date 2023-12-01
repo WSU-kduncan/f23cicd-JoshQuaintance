@@ -11,8 +11,6 @@ This project shows how continuous integration works, which is the standard in to
 - Node.js - Runner (The thing that will run the website)
 - Svelte/SvelteKit - Website example
 
-# TODO: DIAGRAM
-
 ### Running Locally
 
 In order to run this project locally, you need a docker installation. This image was created using Windows Docker inside of WSL.
