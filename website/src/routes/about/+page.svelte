@@ -1,5 +1,5 @@
 <div>
-    <div>
-        <h1>This website is made by Joshua Quaintance</h1>
-    </div>
+    <h1>About</h1>
+
+    <p>This website is made by Joshua Quaintance</p>
 </div>
