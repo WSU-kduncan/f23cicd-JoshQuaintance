@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import { time } from '$components/props/clock';
 
     const formatter = new Intl.DateTimeFormat('en', {
