@@ -3,14 +3,14 @@ run-name: Updating docker image
 
 on:
   push:
+    tags:
+      - '*'
     paths-ignore:
       - '.github/**'
       - 'images/**'
       - 'README-CI.md'
     branches:
       - 'main'
-    tags:
-      - 'v*'
 
 jobs:
   build-and-push-image:
