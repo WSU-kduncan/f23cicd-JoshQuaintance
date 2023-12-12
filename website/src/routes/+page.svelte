@@ -1,6 +1,7 @@
 <script lang="ts">
     import Clock from '$components/Clock.svelte';
     import CounterButton from '$components/CounterButton.svelte';
+    import { goto } from '$app/navigation';
 </script>
 
 <svelte:head>
@@ -24,6 +25,8 @@
     <CounterButton />
 
     <Clock />
+
+    <button on:click={goto('/about')}>About</button>
 </div>
 
 <style lang="postcss">
