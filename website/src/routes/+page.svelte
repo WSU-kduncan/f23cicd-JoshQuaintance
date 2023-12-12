@@ -5,7 +5,6 @@
 
 <svelte:head>
     <title>SvelteKit Template</title>
-
 </svelte:head>
 
 <div class="container">
@@ -25,8 +24,6 @@
     <CounterButton />
 
     <Clock />
-
-    <p>&copy; 2023 | Made by Joshua Quaintance!</p>
 </div>
 
 <style lang="postcss">
