@@ -5,10 +5,8 @@ on:
   push:
     tags:
       - v*
-    paths-ignore:
-      - '.github/**'
-      - 'images/**'
-      - 'README-CI.md'
+    paths:
+      - 'website/*'
 
 jobs:
   build-and-push-image:
