@@ -5,7 +5,7 @@
     <p>There will be more content here</p>
 </div>
 
-<style>
+<style lang="postcss">
 	div {
 		@apply w-screen h-screen
 		@apply flex items-center justify-center
