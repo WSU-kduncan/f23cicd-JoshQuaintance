@@ -7,12 +7,16 @@
 
 <style lang="postcss">
 	div {
-		@apply w-screen h-screen
-		@apply flex items-center justify-center
+		width: 100vw;
+		height: 100vh;
+		display: flex
+		justify-content: center;
+		align-items: center;
 	}
 
 	h1 {
-		@apply underline decoration-indig-500
+		text-decoration: underline;
+		text-decoration-color: #6366f1;
 
 	}
 
