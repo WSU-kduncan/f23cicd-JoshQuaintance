@@ -40,3 +40,13 @@ jobs:
           file: ./website/Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
+
+  send-webhook-payload:
+    steps:
+      - name: Invoke deployment hook
+        uses: distributhor/workflow-webhook@v2
+        with:
+          webhook_url: ${{ secrets.WEBHOOK_URL }}
+          webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
+          webhook_auth_type: "header"
+
