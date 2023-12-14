@@ -41,10 +41,7 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
 
-  send-webhook-payload:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Invoke deployment hook
+      - name: Send Deployment Webhook
         uses: distributhor/workflow-webhook@v2
         with:
           webhook_url: ${{ secrets.WEBHOOK_URL }}
