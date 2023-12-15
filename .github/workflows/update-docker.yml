@@ -9,7 +9,7 @@ on:
       - 'website/*'
 
 jobs:
-  build-and-push-image:
+  update-image-and-redeploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
