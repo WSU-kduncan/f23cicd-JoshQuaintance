@@ -18,7 +18,7 @@
         <br />
 
         <a href="https://tailwindcss.com" target="_blank" rel="noreferrer">
-            <span id="tailwind" class="bg-clip-text bg-gradient-to-r text-transparent">Tailwind</span>
+            <span id="tailwind" class="bg-clip-text bg-gradient-to-r text-transparent">Joshua</span>
         </a>!
     </span>
 
