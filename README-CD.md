@@ -14,6 +14,9 @@ Tools:
 - Linux Systemctl service (Service provider)
 
 
+![CD Diagram](CD-Diagram.svg)
+
+
 ## Part 1 - Semver
 
 First learning how to create tags in git. It's as simple as:
